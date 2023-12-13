@@ -1,46 +1,66 @@
-## 10주차 지역 원격 저장소 연동 push와 pull 정리
+### 오픈 소스 소프트웨어 개요 ###
 
-# push
-- 지역저장소에서 원격저장소로 자료를 올리는 명렬어
+# 오픈소스 소프트웨어
+ OSS: Open Source Software 
+- 누구나 특별한 제한 없이 그 코드를 보고 사용할 수 있는 오픈 소스 라이선스를 만족하는 SW
+  - 소스 코드를 공개, 공개 소스의 복제도 가능
+  - 통상 간략하게 오픈소스, OSS라 칭함
 
-# pull
-- 원격저장소에서 지역저장소로 자료를 내려받는 명령어
+# Open Source Initiative'
+- opensource.org
+- 공개 소스 정의(OSD)의 관리 및 촉진을 담당하는 비영리 조합
 
-# 원도 push중 오류
-1) 참조 오류발생 가능 -> windows 환경에서 깃 사용자 계정과 암호 설정 및 변경
-2) 인증 오류 발생 가능 -> PAT로 연결
+# 의미
+- 소프트웨어 소스코드를 자유롭게 읽고, 수정 및 재배포가 가능
 
-# 지역 저장소에서 PUSH
-1) 쓰기 권한이 있어야  push가 가능
-2) push
-3) 명령
-- $git push <저장소 별칭명> <브랜치명>
-- $git push origin topic
+# 자유소프트웨어에서 출발한 OSS
+- 자유소프트웨어: 리처드 스톨먼
 
-# 명령 push에서 인자 생략하기
-- 옵션 - u 사용
--> 최초에 한번만 저장소명과 브랜치명을 입력하고 그 후에는 모든 인자를 생략 가능
-$git push origin topic
-성공 이후 간단히 다음으로 가능
-- $git push
+# 카피레프트
+- 제작자에게 저작권은 인정하면서 어느 누구나 소프트웨어를 복제해 사용할 수 있는 권리를 주어야 한다는 개념을 갖는 SW 의미
 
-# git pull = git fetch + git merge
-  git pull 명령
-- fetch 명령과 병합하는 merge 명령이 순차적으로 진행
-  fetch 명령
-- 원격 저장소의 정보를 로컬 (remote/origin) 저장소로 가져오는 명령
-  merge 명령
-- 변경된 정보를 로컬 저장소의 내용과 병합
+# 오픈소스 방식의 의미
+  오픈소스 지원 관리 서버
+- 소스 코드를 통해 여러 개발자가 협업하고 공유하며 이를 지원하는 방안을 마련
+-> git hub, gitlab, bitbucket
 
-# fetch 후 병합
-- 깃허브 내용을 반영하려면 fetch 후 merge 해야함
-- $ git merge origin/main
+#오픈소스 소프트웨어 장단점
+장점: 소스 코드를 공개 (누구든지 보다 쉽게 연구하며, 새로운 프로그래밍 기술을 개발), 
+      커스터마이징과 혁신 지원 ( 기업이 구체적인 요구사항에 맞게 커스터마이징 가능, 새로운 사용자의 경험으로 혁신할 수 있도록 지원)
+단점: 공개의 의무, 품질 보증 및 유지 보수, 보안 등의 어려움
 
-# 원격 브랜치
-- 원격을 포함한 모든 브랜치 파악
-  지역 브랜치와 HEAD
-- main HEAD
-  원격의 브랜치와 HEAD
-- origin/main origin/HEAD
+# 오픈소스 개발 모델(LAMP)
+- Linux
+- Apach
+- MYSQL
+- PHP
+
+# 빅데이터, 인공지능 분야
+- Python
+- Seikit-learn
+- Tensorflow
+- Pytoreh
+
+# 대표 라이선스 정리
+- 의무 강도에 따른 분류
+  Strong copy    2차 저작물 소스코드 공개 의무 (O)                 GPL
+  Weak copyleft  특정 조건에서 2차 저작을 소스코드 공개의무 (X)     LGPL
+  Non copyleft   2차 저작물 소스코드 공개의무 (X)               Apache, BSD, MIT
+
+### 임시저장 Stash ###
+
+# Git Stash
+- 커밋할 필요 x 파이의 변경 사항을 숨기거나 비밀리에 저장할 수 있는 강력한 도구
+
+# Stach 저장 구조 (LIFO)
+- 깃에서 임시저장소 (스택 구조)에 저장
+- 가장 최근의 내용이 가장 위에 저장되는 구조
+- Push / Pull
+(LastIn - First Out)
+
+
+       
+
+
 
 
