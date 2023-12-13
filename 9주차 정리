@@ -1,7 +1,45 @@
+## 9주차 수업 내용 정리
+
 # 클론 개념
 - 원격 저장소(깃허브)
 -원격 저장소를 지역 저장소에 복제
 
 # 깃허브 원격저장소 생성
 - git-clone
+
+# pc깃에서 원격저장소 복제(git clone)
+1. $git clone [복사된-주소]
+- 원격 저장소와 동일안 아름으로 복제
+2. $git clone [복사된-주소] [새로운-폴더명]
+- 하부폴더 [새로운-폴더명] 이름으로 복제
+3. $git clone [복사된-주소].
+- 현재 파일 바로 복제
+
+# 원격 저장소 별칭 이름 점검
+- $git remote
+
+# $git remote - v
+- 저장소 등 원격 저장소 정보 목록 표시
+
+# 원격 저장소 별칭 관리
+1. $git remote add origin URL
+- 원격 저장소 별칭 저장
+2. $git remote show origin
+- 자세한 정보
+3. $git remote origin org
+- 이름 수정
+4. $git remote rm org
+- 삭제
+
+# $ git remote show origin(atom)
+- 원격 저장소의 모든 브랜치 보기 가능
+
+# 유명 oss
+1. 편집기 vscode
+2. 편집기 atom
+3. vcs 깃
+4. 구글 인공지능라이브러리
+
+
+
 
